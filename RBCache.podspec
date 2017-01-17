@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RBCache'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of RBCache.'
 
 # This description is used to generate tags and improve search results.
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/RBCache'
+  s.homepage         = 'https://github.com/baxiang/RBCache.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'baxiang' => 'baxiang1989@163.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/RBCache.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/baxiang/RBCache.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'RBCache/Classes/**/*'
   

@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		0DC17648B0647EAA820246AD50AD3E27 /* RBCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A144BC271E0260932E585CAB62E071D0 /* RBCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ACBFFB46EC72D42471F022A9E0B3133 /* Pods-RBCache_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 683DB73FF540FB329D03E3572EAE0A64 /* Pods-RBCache_Example-dummy.m */; };
-		4E1683D3EE70CB00205C6B2E7A460795 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 430DED4D4B27D2F75E6F9DC2CDE8FD97 /* ReplaceMe.m */; };
 		7F87502671450B57AC6D6B8C7B010810 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		8B2462CA93A2BCFA36D893881F6C7187 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		A3DDAD361AF5C87F5F18DE14A5D096BA /* Pods-RBCache_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7B4547A96E6415552B291664361C5D /* Pods-RBCache_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C078EA46384247355E2BB0C3897E8362 /* Pods-RBCache_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC0A99CA915F115B65EB014EDC09E1 /* Pods-RBCache_Tests-dummy.m */; };
+		C205385F1E2E820700FFE2A6 /* RBCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C205385D1E2E820700FFE2A6 /* RBCache.h */; };
+		C20538601E2E820700FFE2A6 /* RBCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C205385E1E2E820700FFE2A6 /* RBCache.m */; };
+		C20538631E2E824400FFE2A6 /* RBMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C20538611E2E824400FFE2A6 /* RBMemoryCache.h */; };
+		C20538641E2E824400FFE2A6 /* RBMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C20538621E2E824400FFE2A6 /* RBMemoryCache.m */; };
+		C20538671E2E826E00FFE2A6 /* RBDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C20538651E2E826E00FFE2A6 /* RBDiskCache.h */; };
+		C20538681E2E826E00FFE2A6 /* RBDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C20538661E2E826E00FFE2A6 /* RBDiskCache.m */; };
 		C3A98AF07BE18F1CF3CACDA85735297E /* RBCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6F5879973F376D383C660297A255D /* RBCache-dummy.m */; };
 		C628C980FA8AFDD54CABABBAB57B57E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		CF45A5A64BB80A5E08C7E6F2E4ED3D4E /* Pods-RBCache_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6C5F51905E2266379010283E4574C6 /* Pods-RBCache_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		034DFD1842334BE93CE01926C7586196 /* Pods-RBCache_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBCache_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0A9356BA35CA3013725457E02EAC2CF9 /* Pods_RBCache_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RBCache_Example.framework; path = "Pods-RBCache_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9356BA35CA3013725457E02EAC2CF9 /* Pods_RBCache_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBCache_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C577D66C4EF25BAE7F4E2C127F5273A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DB0A30AC1ECEFE70AB1A2C8895820A3 /* Pods-RBCache_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBCache_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1826EF0E1093189DA058A214A4BA38A9 /* Pods-RBCache_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBCache_Example-resources.sh"; sourceTree = "<group>"; };
@@ -40,26 +45,31 @@
 		2EAF188D7CDF31D9DFB568F663F5A925 /* Pods-RBCache_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RBCache_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A72FE6472A90A23A57CC075FCAD1D1A /* Pods-RBCache_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBCache_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3C7B4547A96E6415552B291664361C5D /* Pods-RBCache_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RBCache_Tests-umbrella.h"; sourceTree = "<group>"; };
-		430DED4D4B27D2F75E6F9DC2CDE8FD97 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		4B0B26597F2D5AC58F8DFBD1639B7DD5 /* Pods-RBCache_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBCache_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5EC728AE63776384613BD9DD762D8E36 /* RBCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RBCache.framework; path = RBCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC728AE63776384613BD9DD762D8E36 /* RBCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61CA32ECB1DCA0E70B14DC9931274501 /* Pods-RBCache_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBCache_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		67A538543BD56CBF2BC5636D12D31A72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		683DB73FF540FB329D03E3572EAE0A64 /* Pods-RBCache_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBCache_Example-dummy.m"; sourceTree = "<group>"; };
-		7F61D4AF41D8E3FD3340D2F497341E3A /* Pods-RBCache_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RBCache_Example.modulemap"; sourceTree = "<group>"; };
+		7F61D4AF41D8E3FD3340D2F497341E3A /* Pods-RBCache_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RBCache_Example.modulemap"; sourceTree = "<group>"; };
 		82A6F5879973F376D383C660297A255D /* RBCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RBCache-dummy.m"; sourceTree = "<group>"; };
-		82B0AC10DF41390885329EA9EBF8918F /* Pods_RBCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RBCache_Tests.framework; path = "Pods-RBCache_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B0AC10DF41390885329EA9EBF8918F /* Pods_RBCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RBCache_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		849554C6B7B5B14E4DEA7E8433860E64 /* Pods-RBCache_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBCache_Tests-resources.sh"; sourceTree = "<group>"; };
-		8F20B8C88CC3E177F322BDCA2600067C /* Pods-RBCache_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RBCache_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8F20B8C88CC3E177F322BDCA2600067C /* Pods-RBCache_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RBCache_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D90CB91A6BAD6470E532F90B3D95F6C /* RBCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RBCache.xcconfig; sourceTree = "<group>"; };
 		9E17257E57406C6E89B220636F125ACF /* Pods-RBCache_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RBCache_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A144BC271E0260932E585CAB62E071D0 /* RBCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBCache-umbrella.h"; sourceTree = "<group>"; };
 		ACEC0A99CA915F115B65EB014EDC09E1 /* Pods-RBCache_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RBCache_Tests-dummy.m"; sourceTree = "<group>"; };
 		AE1CE72E3E2F52869F926698A01D0452 /* RBCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBCache-prefix.pch"; sourceTree = "<group>"; };
 		BB530AD02EF77A6A56D1562E93013FCC /* Pods-RBCache_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RBCache_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BBC5D873B72FB8CF3B1550725E9C5D4F /* RBCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RBCache.modulemap; sourceTree = "<group>"; };
+		BBC5D873B72FB8CF3B1550725E9C5D4F /* RBCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RBCache.modulemap; sourceTree = "<group>"; };
 		BFE048B995AF5B947B45742F6947F137 /* Pods-RBCache_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RBCache_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C205385D1E2E820700FFE2A6 /* RBCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCache.h; sourceTree = "<group>"; };
+		C205385E1E2E820700FFE2A6 /* RBCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCache.m; sourceTree = "<group>"; };
+		C20538611E2E824400FFE2A6 /* RBMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBMemoryCache.h; sourceTree = "<group>"; };
+		C20538621E2E824400FFE2A6 /* RBMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMemoryCache.m; sourceTree = "<group>"; };
+		C20538651E2E826E00FFE2A6 /* RBDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBDiskCache.h; sourceTree = "<group>"; };
+		C20538661E2E826E00FFE2A6 /* RBDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBDiskCache.m; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E73A56242FBDA918C0204439EEEF4104 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,7 +163,6 @@
 			children = (
 				CB842DEF732F99B4F2061E5892D8DBCA /* Classes */,
 			);
-			name = RBCache;
 			path = RBCache;
 			sourceTree = "<group>";
 		};
@@ -210,9 +219,13 @@
 		CB842DEF732F99B4F2061E5892D8DBCA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				430DED4D4B27D2F75E6F9DC2CDE8FD97 /* ReplaceMe.m */,
+				C205385D1E2E820700FFE2A6 /* RBCache.h */,
+				C205385E1E2E820700FFE2A6 /* RBCache.m */,
+				C20538611E2E824400FFE2A6 /* RBMemoryCache.h */,
+				C20538621E2E824400FFE2A6 /* RBMemoryCache.m */,
+				C20538651E2E826E00FFE2A6 /* RBDiskCache.h */,
+				C20538661E2E826E00FFE2A6 /* RBDiskCache.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -240,6 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF45A5A64BB80A5E08C7E6F2E4ED3D4E /* Pods-RBCache_Example-umbrella.h in Headers */,
+				C205385F1E2E820700FFE2A6 /* RBCache.h in Headers */,
+				C20538671E2E826E00FFE2A6 /* RBDiskCache.h in Headers */,
+				C20538631E2E824400FFE2A6 /* RBMemoryCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20538601E2E820700FFE2A6 /* RBCache.m in Sources */,
 				2ACBFFB46EC72D42471F022A9E0B3133 /* Pods-RBCache_Example-dummy.m in Sources */,
+				C20538641E2E824400FFE2A6 /* RBMemoryCache.m in Sources */,
+				C20538681E2E826E00FFE2A6 /* RBDiskCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3A98AF07BE18F1CF3CACDA85735297E /* RBCache-dummy.m in Sources */,
-				4E1683D3EE70CB00205C6B2E7A460795 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
