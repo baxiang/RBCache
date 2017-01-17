@@ -1,0 +1,6 @@
+framework module RBCache {
+  umbrella header "RBCache-umbrella.h"
+
+  export *
+  module * { export * }
+}

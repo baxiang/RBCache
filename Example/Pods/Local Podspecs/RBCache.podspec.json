@@ -1,0 +1,22 @@
+{
+  "name": "RBCache",
+  "version": "0.1.0",
+  "summary": "A short description of RBCache.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RBCache",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "baxiang": "baxiang1989@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RBCache.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RBCache/Classes/**/*"
+}
