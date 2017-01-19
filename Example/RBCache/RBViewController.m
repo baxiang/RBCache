@@ -8,6 +8,7 @@
 
 #import "RBViewController.h"
 #import "RBCache.h"
+
 @interface RBViewController ()
 
 @end
@@ -20,6 +21,18 @@
     NSLog(@"%@", [[RBCache defaultCache] objectForKey:@"abc"]);
     NSLog(@"%@", [RBCache defaultCache][@"number"]);
     NSLog(@"%@", [[RBCache defaultCache] objectForKey:@"hosts"]);
+    
+    NSDictionary *hosts = @{@"nickName" : @"Asshole", @"Company" : @"ABCD", @"age" : @88};
+    RBDiskCache *diskCache = [[RBDiskCache alloc] initWithDirectory:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"userInfo"]
+                                       dbStoreThreshold:500];
+    [diskCache setObject:@"Asshole" forKey:@"nickName"];
+    [diskCache setObject:@"ABCD" forKey:@"Company"];
+    [diskCache setObject:hosts forKey:@"Hosts"];
+    
+    NSLog(@"%@", [diskCache objectForKey:@"nickName"]);
+    NSLog(@"%@", [diskCache objectForKey:@"Company"]);
+    NSLog(@"%@", [diskCache objectForKey:@"Hosts"]);
+    
 }
 
 - (void)didReceiveMemoryWarning
