@@ -7,12 +7,25 @@
 //
 
 #import "RBAppDelegate.h"
+#import "RBCache.h"
+
 
 @implementation RBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[RBCache defaultCache] setObject:@"Asshole" forKey:@"abc"];
+    NSMutableData *dataValue = [NSMutableData new]; // 50KB
+    for (int i = 0; i < 50 * 1024; i++) {
+        [dataValue appendBytes:&i length:1];
+    }
+    [[RBCache defaultCache] setObject:dataValue forKey:@"bigData"];
+    
+    NSDictionary *hosts = @{@"nickName" : @"Asshole", @"Company" : @"ABCD", @"age" : @88};
+    [[RBCache defaultCache] setObject:hosts forKey:@"hosts"];
+    [RBCache defaultCache][@"number"] = @520;
+    
+    
     return YES;
 }
 

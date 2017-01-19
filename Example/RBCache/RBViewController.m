@@ -7,7 +7,7 @@
 //
 
 #import "RBViewController.h"
-
+#import "RBCache.h"
 @interface RBViewController ()
 
 @end
@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@", [[RBCache defaultCache] objectForKey:@"abc"]);
+    NSLog(@"%@", [RBCache defaultCache][@"number"]);
+    NSLog(@"%@", [[RBCache defaultCache] objectForKey:@"hosts"]);
 }
 
 - (void)didReceiveMemoryWarning

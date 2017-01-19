@@ -10,6 +10,13 @@
 #endif
 #endif
 
+#import "RBCache.h"
+#import "RBCacheDefines.h"
+#import "RBDiskCache.h"
+#import "RBKVDataBase.h"
+#import "RBKVItem.h"
+#import "RBKVStore.h"
+#import "RBMemoryCache.h"
 
 FOUNDATION_EXPORT double RBCacheVersionNumber;
 FOUNDATION_EXPORT const unsigned char RBCacheVersionString[];

@@ -1,5 +1,5 @@
 PODS:
-  - RBCache (0.1.0)
+  - RBCache (1.0.0)
 
 DEPENDENCIES:
   - RBCache (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RBCache: ce91f5df4f681bc3e8909d6fed44393f84337b79
+  RBCache: 10eccca63e73c2e11ce548be9e784a064e3e1924
 
 PODFILE CHECKSUM: a9a148c4678b4a2dc5d716d86a715da7c247531e
 

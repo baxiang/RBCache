@@ -31,7 +31,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '7.0'
 
   s.source_files = 'RBCache/Classes/**/*'
-  
+
+  s.library = "sqlite3"
   # s.resource_bundles = {
   #   'RBCache' => ['RBCache/Assets/*.png']
   # }
