@@ -19,6 +19,12 @@
 		C20538641E2E824400FFE2A6 /* RBMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C20538621E2E824400FFE2A6 /* RBMemoryCache.m */; };
 		C20538671E2E826E00FFE2A6 /* RBDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C20538651E2E826E00FFE2A6 /* RBDiskCache.h */; };
 		C20538681E2E826E00FFE2A6 /* RBDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C20538661E2E826E00FFE2A6 /* RBDiskCache.m */; };
+		C27E44AB1E30B23300C9F343 /* RBKVStore.h in Headers */ = {isa = PBXBuildFile; fileRef = C27E44A91E30B23300C9F343 /* RBKVStore.h */; };
+		C27E44AC1E30B23300C9F343 /* RBKVStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E44AA1E30B23300C9F343 /* RBKVStore.m */; };
+		C27E44AF1E30B25A00C9F343 /* RBKVItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C27E44AD1E30B25A00C9F343 /* RBKVItem.h */; };
+		C27E44B01E30B25A00C9F343 /* RBKVItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E44AE1E30B25A00C9F343 /* RBKVItem.m */; };
+		C27E44B31E30B2D200C9F343 /* RBKVDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C27E44B11E30B2D200C9F343 /* RBKVDataBase.h */; };
+		C27E44B41E30B2D200C9F343 /* RBKVDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C27E44B21E30B2D200C9F343 /* RBKVDataBase.m */; };
 		C3A98AF07BE18F1CF3CACDA85735297E /* RBCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A6F5879973F376D383C660297A255D /* RBCache-dummy.m */; };
 		C628C980FA8AFDD54CABABBAB57B57E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		CF45A5A64BB80A5E08C7E6F2E4ED3D4E /* Pods-RBCache_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6C5F51905E2266379010283E4574C6 /* Pods-RBCache_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,6 +76,13 @@
 		C20538621E2E824400FFE2A6 /* RBMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBMemoryCache.m; sourceTree = "<group>"; };
 		C20538651E2E826E00FFE2A6 /* RBDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBDiskCache.h; sourceTree = "<group>"; };
 		C20538661E2E826E00FFE2A6 /* RBDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBDiskCache.m; sourceTree = "<group>"; };
+		C27E44A91E30B23300C9F343 /* RBKVStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBKVStore.h; sourceTree = "<group>"; };
+		C27E44AA1E30B23300C9F343 /* RBKVStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBKVStore.m; sourceTree = "<group>"; };
+		C27E44AD1E30B25A00C9F343 /* RBKVItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBKVItem.h; sourceTree = "<group>"; };
+		C27E44AE1E30B25A00C9F343 /* RBKVItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBKVItem.m; sourceTree = "<group>"; };
+		C27E44B11E30B2D200C9F343 /* RBKVDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBKVDataBase.h; sourceTree = "<group>"; };
+		C27E44B21E30B2D200C9F343 /* RBKVDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBKVDataBase.m; sourceTree = "<group>"; };
+		C27E44B51E30B45400C9F343 /* RBCacheDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBCacheDefines.h; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E73A56242FBDA918C0204439EEEF4104 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +238,13 @@
 				C20538621E2E824400FFE2A6 /* RBMemoryCache.m */,
 				C20538651E2E826E00FFE2A6 /* RBDiskCache.h */,
 				C20538661E2E826E00FFE2A6 /* RBDiskCache.m */,
+				C27E44A91E30B23300C9F343 /* RBKVStore.h */,
+				C27E44AA1E30B23300C9F343 /* RBKVStore.m */,
+				C27E44AD1E30B25A00C9F343 /* RBKVItem.h */,
+				C27E44AE1E30B25A00C9F343 /* RBKVItem.m */,
+				C27E44B11E30B2D200C9F343 /* RBKVDataBase.h */,
+				C27E44B21E30B2D200C9F343 /* RBKVDataBase.m */,
+				C27E44B51E30B45400C9F343 /* RBCacheDefines.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -254,7 +274,10 @@
 			files = (
 				CF45A5A64BB80A5E08C7E6F2E4ED3D4E /* Pods-RBCache_Example-umbrella.h in Headers */,
 				C205385F1E2E820700FFE2A6 /* RBCache.h in Headers */,
+				C27E44B31E30B2D200C9F343 /* RBKVDataBase.h in Headers */,
+				C27E44AB1E30B23300C9F343 /* RBKVStore.h in Headers */,
 				C20538671E2E826E00FFE2A6 /* RBDiskCache.h in Headers */,
+				C27E44AF1E30B25A00C9F343 /* RBKVItem.h in Headers */,
 				C20538631E2E824400FFE2A6 /* RBMemoryCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,8 +380,11 @@
 			files = (
 				C20538601E2E820700FFE2A6 /* RBCache.m in Sources */,
 				2ACBFFB46EC72D42471F022A9E0B3133 /* Pods-RBCache_Example-dummy.m in Sources */,
+				C27E44AC1E30B23300C9F343 /* RBKVStore.m in Sources */,
 				C20538641E2E824400FFE2A6 /* RBMemoryCache.m in Sources */,
 				C20538681E2E826E00FFE2A6 /* RBDiskCache.m in Sources */,
+				C27E44B01E30B25A00C9F343 /* RBKVItem.m in Sources */,
+				C27E44B41E30B2D200C9F343 /* RBKVDataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
